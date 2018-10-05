@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hapus data</title>
+</head>
+<body>
+	<a th:href="@{/}">Back to home</a>
+	<h2 th:if="${deleteError}">Data gagal dihapus, ada foreign key, hapus semua flight nya terlebih dahulu</h2>
+	<h2 th:unless="${deleteError}">Data berhasil dihapus</h2>
+	
+</body>
+</html>
